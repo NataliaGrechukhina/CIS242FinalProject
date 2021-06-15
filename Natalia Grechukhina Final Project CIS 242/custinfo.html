@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Delivery information</title>
+		<meta name="author" content="Natalia Grechukhia" />
+		<meta name="keywords" content="snack, snack box, snackbox store" />
+		<meta name="description" content="Competency Demonstration - CIS 242 Web Dev II Final Project, Snack box store" />	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    	<meta name="robots" content="none" />
+		<link rel="stylesheet" href="../Natalia Grechukhina Final Project CIS 242/css/styles.css" type="text/css" />
+	    <script type="text/javascript" src="../Natalia Grechukhina Final Project CIS 242/js/library.js"></script>
+	    <script type="text/javascript" src="../Natalia Grechukhina Final Project CIS 242/js/cookies.js"></script>
+</head>
+<body>
+	<table name="main" cellpadding="5" width="100%" border="0">
+
+		<tr>
+				<td colspan="2" width="300">
+					<h1>SnackBox.com <br>by Natalia <br>Grechukhina</h1>
+				</td>
+			<td valign="center" class="header"> <img src="graphics/logo.png" width="50%" alt="Snack Box logo" border="0";></td>
+			<td width="1px">&nbsp;</td>
+			<td width="300" valign="center">
+				<h2>CIS 242<br> Web Dev II<br> Final Project</h2>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+				<hr style="background-color:rgb(8, 7, 7)" />
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+				<a href="home.html" class="orderSum">Home</a><br />
+				<a href="contact.html" class="orderSum">Contact Us</a><br />
+				<a href="order.html" class="orderSum">Order Now</a>
+			</td>
+		<td rowspan="2" width="1" style="background-color: #e6e6e6;"></td>
+		
+		<td valign="top" class="menu" width="1000">
+			
+			<table class="menu" border="0" width="100%">
+				<tr>
+					<td style="padding-left:35px;">
+						Your Current
+						<script type="text/javascript">
+							document.write(GetCookie("PCDesc"));
+						</script>
+					</td>
+					<td style="padding-right:35px;">
+						<br /><br />
+						<script type="text/javascript">
+							document.write(GetCookie("PriceSum"));
+						</script>
+					</td>
+				</tr>
+			</table>
+			
+		</td>
+		<td rowspan="2" width="1" style="background-color:#e6e6e6;"></td>
+		<td id="orderSum"  class="orderSum" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="menu" valign="top">
+			Delivery Information <span style="font-size:x-small">(* required information)</span>
+			<form action="summary.html" method="get"  id="customerForm" onsubmit="return chForm();">
+			<table width="100%">
+				<tr>
+					<td width="400px">First Name: *</td>
+					<td><input type="text" name="txtFName" onchange="return clearThis()" /><span class="validity"></span></td>
+					<td id="txtFName" style="color:#585858;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Last Name: *</td>
+					<td><input type="text" name="txtLName"  onchange="return clearThis()" /></td>
+					<td id="txtLName" style="color:#585858;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Email: *</td>
+					<td><input type="text" name="txtEmail" size="30"  onchange="return clearThis()" /></td>
+					<td id="txtEmail" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+				</tr>
+				<tr>
+					<td>Address: *</td>
+					<td><input type="text" name="txtAddress" size="30"  onchange="return clearThis()" /></td>
+					<td id="txtAddress" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+				</tr><tr>
+					<td>Apatrment number: </td>
+					<td><input type="text" name="txtApartment" size="30"  onchange="return clearThis()" /></td>
+					<td id="txtApartment" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+				</tr><tr>
+					<td>City / State / ZIP (xxxxx): *</td>
+					<td><input type="text" name="txtCity" size="30"  onchange="return clearThis()" /></td>
+					<td id="txtCity" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+					<td><input type="text" name="txtState" size="3"  onchange="return clearThis()" /></td>
+					<td id="txtState" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+					<td><input type="text" name="txtZip" size="5"  onchange="return clearThis()"></td>
+					<td id="txtZip" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+				</tr><tr>
+					<td>Phone number: (xxx-xxx-xxxx)*</td>
+					<td><input type="text" name="txtPhone" size="30"  onchange="return clearThis()" /></td>
+					<td id="txtPhone" style="color:#585858;font-weight:bold; font-size: smaller"></td>
+					
+				</tr>
+
+				<tr>
+					<td colspan="10" align="center"><br /><br /><input type="submit" name="cmdSubmit" value="Order your Box" /></td>
+				</tr>
+			</table>
+			
+			</form>
+		</td>
+		<td valign="top" id="priceSum" class="orderSum">&nbsp;</td>
+	</tr>
+</table>
+
+
+</body>
+
+</html> 

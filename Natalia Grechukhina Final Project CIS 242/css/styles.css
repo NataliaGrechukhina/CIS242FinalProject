@@ -1,0 +1,40 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color:	#e6e6e6;
+}
+.menu {
+	background-color:	#e6e6e6;
+	color: rgb(0, 0, 0);
+}
+.header{
+	background-color:	#e6e6e6;
+	text-align: center;
+}
+img {
+	box-shadow: 2px 2px 4px rgb(43, 40, 40);
+}
+h1 {
+	color:  #585858;
+	text-shadow: 2px 2px 2px rgb(43, 40, 40);
+	font-size: xx-large;
+	font-family: 'Rubik', sans-serif;
+	float: left;
+}
+ul {
+	list-style-type:none;
+}
+h2 {
+	font-size: x-large;
+	color: #585858;
+	text-shadow: 2px 2px 2px rgb(43, 40, 40);
+	text-align: right;
+	font-family: 'Rubik', sans-serif;
+}
+.orderSum{
+	color:rgb(0, 0, 0);
+	background-color:	#e6e6e6;
+
+}
+.options {
+	visibility: hidden;
+}

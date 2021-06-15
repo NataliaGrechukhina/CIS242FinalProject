@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Summary</title>
+		<meta name="author" content="Natalia Grechukhia" />
+		<meta name="keywords" content="snack, snack box, snackbox store" />
+		<meta name="description" content="Competency Demonstration - CIS 242 Web Dev II Final Project, Snack box store" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    	<meta name="robots" content="none" />
+		<link rel="stylesheet" href="../Natalia Grechukhina Final Project CIS 242/css/styles.css" type="text/css" />
+	    <script type="text/javascript" src="../Natalia Grechukhina Final Project CIS 242/js/library.js"></script>
+	    <script type="text/javascript" src="../Natalia Grechukhina Final Project CIS 242/js/cookies.js"></script>
+<script type="text/javascript">
+
+ 
+</script>
+
+</head>
+<body style="color:white"  onLoad="secondPassed()">
+
+<form action="summary.html" onsubmit="return orderSummary()">
+	<table name="main" cellpadding="5" width="100%" border="0">
+		<tr>
+			<td colspan="2" width="300">
+				<h1>SnackBox.com <br>by Natalia <br>Grechukhina</h1>
+				</td>
+			<td valign="center" class="header"> <img src="graphics/logo.png" width="50%" alt="Snack Box logo" border="0";></td>
+			<td width="1px">&nbsp;</td>
+			<td width="300" valign="center">
+				<h2>CIS 242<br> Web Dev II<br> Final Project</h2>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="6">
+				<hr style="background-color:rgb(8, 7, 7)" />
+			</td>
+		</tr>
+		<tr>
+			<td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+				<ul>
+					<li><a href="home.html" class="orderSum">Home</a><br /></li>
+					<li><a href="contact.html" class="orderSum">Contact Us</a><br /></li>
+					<li><a href="order.html" class="orderSum">Order Now</a></li>
+				</ul>
+			</td>
+		<td style="background-color: #e6e6e6" rowspan="2">&nbsp;</td>
+		<td valign="top" class="menu">
+				<h3>Thank you for ordering from SnackBox.com</h3>
+				<div style="padding-left:50px">
+				<p>Your order will be to you within one week:</p><p id="countdown" class="timer" style="text-align:center;"></p>
+
+				<p>Your order will be delivered to:</p>
+
+<script type="text/javascript">
+//<!--
+//<![CDATA[
+
+document.write(GetCookie("custName") + "<br />");
+document.write(GetCookie("custAddress") + "<br />");
+document.write(GetCookie("custCity") + "<br />");
+document.write(GetCookie("custEmail") + "<br />");
+document.write(GetCookie("custPhone") + "<br />");
+
+//]]>
+//-->
+</script>
+<p>
+<script type="text/javascript">
+
+document.write(GetCookie("PCDesc"));
+
+
+</script>
+<p>The final price for your order is:</p>
+
+<p align="right">
+<script type="text/javascript">
+//<!--
+//<![CDATA[
+
+document.write(GetCookie("PriceSum"));
+
+//]]>
+//-->
+</script></p></div>
+		</td>
+		<td rowspan="1" width="1"></td>
+	</tr>
+	
+		
+
+	
+	
+</table>
+</body>
+</html> 
